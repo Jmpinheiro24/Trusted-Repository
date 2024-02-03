@@ -1,0 +1,54 @@
+
+body { background-color: black;}
+
+#background {
+    background-image: url(Assets/ground.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border: solid 2px #c12128;
+    background-color: white;
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    position:relative;
+    overflow: hidden;
+}
+
+
+#cactus {
+    background-image: url(Assets/cactus.png);
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 9px;
+    animation: cactus-animation 2s infinite linear;
+
+
+}
+
+@keyframes cactus-animation {
+    From  { left:700px;}
+    To {left: -50px;}
+}
+
+
+#dino {
+    background-image: url(Assets/trex.png);
+    background-repeat: no-repeat;
+    width: 102px;
+    height: 94px;
+    position: absolute;
+    bottom: 16px;
+}
+
+.jump {
+    animation: jump 2s ease-out;
+}
+
+@keyframes jump {
+    0% {bottom:16px;}
+    50% {bottom:120px;}
+    100% {bottom:16px;}
+    
+}
